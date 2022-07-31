@@ -38,8 +38,9 @@ jobs:
              cmd: install
              
       - name: Creating build
-        run: yarn run v1.22.19 
-        npm: install -g serve
+        run: yarn run v1.22.19
+      - name: Deploy yarn  
+        run: npm install -g serve
       - name: Installing Surge
         run: npm install -g surge
         
