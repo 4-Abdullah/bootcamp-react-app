@@ -33,7 +33,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: GitHub Action for yarn
-        uses: Borales/actions-yarn@v2
+        uses: Borales/actions-yarn@v2.1.0
         with:
              cmd: install
         
@@ -43,5 +43,3 @@ jobs:
       - name: Deploying on surge
         run: surge ./build https://fascinated-sense.surge.sh/ --token${{secrets.Surge_Token}}
              
-             
-     
