@@ -37,9 +37,10 @@ jobs:
         with:
              cmd: install
              
-      - name: Creating build
-        run: yarn build
-      
+      - name: Yarn & Percy CI
+      # You may pin to the exact commit or the version.
+      # uses: jpvalery/yarn-percy-ci@08a8ee882f85d570965ae86da63f2899647d16e4
+        uses: jpvalery/yarn-percy-ci@v1.0.0-beta
         
       - name: Installing Surge
         run: npm install -g surge
