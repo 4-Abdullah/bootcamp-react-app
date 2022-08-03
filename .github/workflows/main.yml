@@ -40,9 +40,9 @@ jobs:
       - name: Creating build
         run: yarn build
      
-      - name: Installing Surge
+      - name: installing surge
         run: npm install -g surge
         
-      - name: Deploying on surge
-        run: surge ./build https://fascinated-sense.surge.sh/ --token${{secrets.Surge_Token}}
+      - name: deploying on surge
+        run: surge ./build https://fascinated-sense.surge.sh/ --token ${{secrets.Surge_Token}}
              
