@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CLI
+name: React_app
 
 # Controls when the workflow will run
 on:
@@ -23,26 +23,21 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Installing Node
-        uses: actions/setup-node@v2-beta
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.4.1
         with:
-              node-version: 12
+             node-version: 16.16.0
 
       # Runs a set of commands using the runners shell
-      - name: GitHub Action for yarn
-        uses: Borales/actions-yarn@v2.1.0
-        with:
-             cmd: install
-             
       - name: Creating build
-        run: yarn build
+        run: npm run build
      
-      - name: Installing Surge
+      - name: installing surge
         run: npm install -g surge
         
-      - name: Deploying on surge
-        run: surge ./build https://fascinated-sense.surge.sh/ --token${{secrets.Surge_Token}}
+      - name: deploying on surge
+        run: surge ./build https://fascinated-sense.surge.sh/ --token ${{secrets.Surge_Token}}
              
