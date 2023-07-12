@@ -15,4 +15,4 @@ A speed-up value greater than 1 indicates that the parallel execution is faster 
 - nine
 
 [Youtube](https://www.youtube.com/)
-![alt text](https://thumbs.dreamstime.com/z/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg)
+![alt text](https://www.dreamstime.com/sunset-over-walls-china-mungo-national-park-australia-new-south-wales-stock-photo-image-free-141909560)
