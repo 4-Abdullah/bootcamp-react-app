@@ -2,7 +2,7 @@
 ## Abc
 
 ### *this is a sample paragraph. About bootcamp react app.*
-### ---Nice work
+### ---Nice work!
 
 The speed-up value represents the ratio of the time taken for the sequential execution to the time taken for the parallel execution. 
 A speed-up value greater than 1 indicates that the parallel execution is faster than the sequential execution.
