@@ -1,4 +1,4 @@
-# H1 **bootcamp-react-app**
+# bootcamp-react-app
 ## H2 > Abc
 
 ### *H3 this is a sample paragraph. About bootcamp react app.*
